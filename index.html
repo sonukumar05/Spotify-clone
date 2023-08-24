@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <title>Spotify</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/4f3a05d687.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li class="brand">
+          <img src="./logo.png" alt="Spotify Image" />Spotify
+        </li>
+        <li>Home</li>
+        <li>About</li>
+      </ul>
+    </nav>
+
+    <div class="container">
+      <div class="songList">
+        <h1>Best of ncs- No Copyright Sounds</h1>
+        <div class="songItemContainer">
+          <div class="songItem">
+            <img src="./covers/8.jpg" alt="1" />
+            <span class="songName">Jawan Prevue Theme</span>
+            <span class="songListPlay">05:34</span>
+            <span class="playButton"><i id="1" class="far songItemPlay fa-circle-play"></i></span>
+          </div>
+          <div class="songItem">
+            <img src="./covers/2.jpg" alt="2" />
+            <span class="songName">Main Nikla Gaddi Leke</span>
+            <span class="songListPlay">06:25</span>
+            <span class="playButton"><i id="2" class="far songItemPlay fa-circle-play"></i></span>
+          </div>
+          <div class="songItem">
+            <img src="./covers/3.jpg" alt="3" />
+            <span class="songName">Zinda Banda</span>
+            <span class="songListPlay">03:39</span>
+            <span class="playButton"><i id="3" class="far songItemPlay fa-circle-play"></i></span>
+          </div>
+          <div class="songItem">
+            <img src="./covers/4.jpg" alt="4" />
+            <span class="songName">Har Har Mahadev</span>
+            <span class="songListPlay">05:19</span>
+            <span class="playButton"><i id="4" class="far songItemPlay fa-circle-play"></i></span>
+          </div>
+          <div class="songItem">
+            <img src="./covers/5.jpg" alt="5" />
+            <span class="songName">You Talking To Me</span>
+            <span class="songListPlay">05:34</span>
+            <span class="playButton"><i id="5" class="far songItemPlay fa-circle-play"></i></span>
+          </div>
+          <div class="songItem">
+            <img src="./covers/6.jpg" alt="6" />
+            <span class="songName">Tu Aaja Na</span>
+            <span class="songListPlay">04:14</span>
+            <span class="playButton"><i id="6" class="far songItemPlay fa-circle-play"></i></span>
+          </div>
+          <div class="songItem">
+            <img src="./covers/7.jpg" alt="7" />
+            <span class="songName">Love Stereo Again</span>
+            <span class="songListPlay">03:24</span>
+            <span class="playButton"><i id="7" class="far songItemPlay fa-circle-play"></i></span>
+          </div>
+
+          <div class="songItem">
+            <img src="./covers/1.jpg" alt="8" />
+            <span class="songName">Bhide</span>
+            <span class="songListPlay">07:54</span>
+            <span class="playButton"><i id="8" class="far songItemPlay fa-circle-play"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="songBanner"></div>
+    </div>
+
+    <div class="bottom">
+      <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100" />
+      <div class="icons">
+        <!--fontawesome icons-->
+        <i class="fas fa-3x fa-backward-step" id="previous"></i>
+        <i class="fas fa-3x fa-circle-play" id="masterPlay"></i>
+        <i class="fas fa-3x fa-forward-step" id="next"></i>
+      </div>
+      <div class="songInfo">
+        <img src="playing.gif" width="50px" alt="playing gif" id="gif"><span id="masterSongName">Jawan Prevue Theme</span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
